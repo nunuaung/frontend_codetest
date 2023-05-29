@@ -1,0 +1,75 @@
+.about-text{
+    padding: 30px 0 20px 0;
+    font-size: var(--font-sm);
+}
+.about-flex{
+    align-items: center;
+}
+.about-col{
+    flex: 1;
+}
+.about-image{
+    position: relative;
+    justify-content: center;
+}
+.about-image img{
+    z-index: 1;
+}
+.border-bgOne{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 535px;
+    height: 535px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    background-size: 100% 100%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(white, white), 
+    linear-gradient(57deg, #EA1A25 63%, #FFFFFF 30%),
+     linear-gradient(-173deg, #EA1A25 56%, #FFFFFF 30%), 
+     linear-gradient(41deg, #EA1A25 40%, #FFFFFF 30%), 
+     linear-gradient(276deg, #EA1A25 67%, #FFFFFF 30%), 
+     linear-gradient(398deg, #EA1A25 146%, #FFFFFF 30%);
+    background-position: center center, left top, right top, left bottom, right bottom;
+    background-origin: content-box, border-box, border-box, border-box, border-box;
+    background-clip: content-box, border-box, border-box, border-box, border-box;
+}
+.border-bgTwo{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 470px;
+    height: 470px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    background-size: 100% 100%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#FFFFFF, #FFFFFF), 
+    linear-gradient(177deg, #EA1A25 63%, #FFFFFF 62%),
+     linear-gradient(102deg, #EA1A25 37%, #FFFFFF 155%), 
+     linear-gradient(66deg, #EA1A25 41%, #FFFFFF 31%), 
+     linear-gradient(97deg, #EA1A25 72%, #FFFFFF 40%);
+    background-position: center center, left top, right top, left bottom, right bottom;
+    background-origin: content-box, border-box, border-box, border-box, border-box;
+    background-clip: content-box, border-box, border-box, border-box, border-box;
+}
+.border-bgThree{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    background-size: 100% 100%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#FFFFFF, #FFFFFF), 
+    linear-gradient(177deg, #EA1A25 63%, #FFFFFF 62%),
+     linear-gradient(102deg, #EA1A25 37%, #FFFFFF 155%), 
+     linear-gradient(66deg, #EA1A25 41%, #FFFFFF 31%), 
+     linear-gradient(97deg, #EA1A25 72%, #FFFFFF 40%);
+    background-position: center center, left top, right top, left bottom, right bottom;
+    background-origin: content-box, border-box, border-box, border-box, border-box;
+    background-clip: content-box, border-box, border-box, border-box, border-box;
+}

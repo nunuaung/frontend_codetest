@@ -1,0 +1,126 @@
+.slider-wrapper{
+    justify-content: flex-end;
+}
+.slider{
+    width: 35%;
+}
+.slider-content{
+    width: 70%;
+    padding: 3rem 6rem 3rem 18rem;
+    background: transparent linear-gradient(113deg, #3AE7AB 0%, #2DC4EA 100%) 0% 0% no-repeat padding-box;
+}
+.slider-info{
+    align-items: flex-start;
+}
+.arrow-right{
+    margin: 5px 10px 0 0;
+}
+.slider {
+    position: absolute;
+    right: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.slider.image {
+    max-width: 400px;
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+}
+.slider-title{
+    margin-bottom: 1.875rem;
+    font-size: 2.25rem;
+    font-weight: 400;
+    color: var(--color-white);
+}
+.slider-info{
+    margin-bottom: 1.5rem;
+    color: var(--color-white);
+}
+.right-arrow, .left-arrow{
+    font-size: 2rem;
+    color: var(--color-white);
+    cursor: pointer;
+    user-select: none;
+} 
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+}
+.toggle-container {
+    position: relative;
+    display: inline-block;
+    width: 142px;
+    height: 40px;
+    margin-top: 2rem;
+    pointer-events: none;
+    user-select: none;
+}
+  .toggle-container input {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: all;
+}
+.button-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent linear-gradient(270deg, #3AE7AB 0%, #2DC4EA 100%) 0% 0% no-repeat padding-box;
+    transition: 0.4s;
+    pointer-events: none;
+}
+.button-slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 12px;
+    bottom: 8px;
+    background-color: #fff;
+    transition: 0.2s;
+    pointer-events: none;
+}
+.button-slider:after {
+    position: absolute;
+    content: "";
+    display: flex;
+    height: 24px;
+    width: 75px;
+    right: -15%;
+    transform: translate(-50%, 37%);
+    transition: 0.2s;
+    pointer-events: none; 
+}
+input:checked + .button-slider {
+    background: transparent linear-gradient(270deg, #3AE7AB 0%, #2DC4EA 100%) 0% 0% no-repeat padding-box;
+}
+input:checked + .button-slider:before {
+    transform: translateX(93px);
+}
+.button-slider:after {
+    content: "Mobile";
+    color: white;
+}
+input:checked + .button-slider:after {
+    content: "Desktop";
+    left: 50%;
+    transform: translate(-50%, 37%);
+    color: white;
+}
+.button-slider.round {
+    border-radius: 34px;
+    border: 1px solid var(--color-white);
+}
+.button-slider.round:before {
+    border-radius: 50%;
+}

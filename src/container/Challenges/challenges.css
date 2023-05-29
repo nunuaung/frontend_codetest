@@ -1,0 +1,15 @@
+.posts{
+    margin-top: 30px;
+}
+.challenges-image{
+    justify-content: center;
+    align-items: center;
+}
+.challenges-image img{
+    width: 90%;
+}
+@media screen and (max-width: 768px) {
+    .challenges-flex{
+        flex-direction: column-reverse;
+    }
+}

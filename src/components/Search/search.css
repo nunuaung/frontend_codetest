@@ -1,0 +1,32 @@
+.search-box{
+    align-items: center;
+    padding: 8px 10px;
+    background: var(--color-white);
+}
+.search-box input{
+    width: 0;
+    outline: none;
+    border: none;
+    background: transparent;
+    transition: 0.8s;
+}
+.search-box:hover{
+    border-radius: 20px;
+    box-shadow: 0 0px 2px rgba(0,0,0,0.3);
+}
+.search-box:hover input{
+    width: 100px;
+    padding: 0 10px;
+}
+.search-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+}
+.search-icon{
+    font-size: 1.25rem;
+    color: var(--color-black);
+    cursor: pointer;
+}
